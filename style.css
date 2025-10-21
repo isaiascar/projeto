@@ -27,10 +27,11 @@
 }
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 #container {
-  width: 360px;
-
+  width: 100%;
+  max-width: 588px;
   padding: 0 24px;
   margin: 56px auto 0px;
 }
@@ -71,7 +72,6 @@ body {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  
 }
 #switch span {
   width: 64px;
@@ -145,4 +145,13 @@ footer {
 }
 footer a {
   color: var(--text-color);
+}
+/*media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+  }
 }
